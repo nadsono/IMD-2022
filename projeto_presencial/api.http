@@ -1,0 +1,28 @@
+GET http://localhost:8080/
+//HOME PAGE
+###
+GET http://localhost:8080/produtos
+###
+GET http://localhost:8080/produtos/1
+//PRODUTO BY ID
+###
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Teste",
+    "descricao": "Produto para teste...",
+    "preco": 90.8
+}
+###
+PUT http://localhost:8080/produtos/1
+Content-Type: application/json
+
+{
+    "nome": "Novo nome",
+    "descricao": "Nova desc",
+    "preco": 100
+}
+###
+DELETE http://localhost:8080/produtos/aa7b7696-7afc-4b04-b806-eb1f515bce73
+
